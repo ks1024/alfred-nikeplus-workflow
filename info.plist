@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>alfred.nikeplus.workflow</string>
+	<key>connections</key>
+	<dict>
+		<key>DF1AB3A1-E4A2-4551-BC76-C57222607250</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB619195-479A-447F-A98D-7FC6BD45066F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>kuangshi Yan</string>
+	<key>description</key>
+	<string>Search your nikeplus data and have them returned to Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>NikePlus</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>np</string>
+				<key>runningsubtext</key>
+				<string>Searching for {query}</string>
+				<key>script</key>
+				<string>php -f nikeplus_helper.php -- "{query}"</string>
+				<key>subtext</key>
+				<string>Search your nike+ data for {query}</string>
+				<key>title</key>
+				<string>Search Nike+</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DF1AB3A1-E4A2-4551-BC76-C57222607250</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>EB619195-479A-447F-A98D-7FC6BD45066F</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>DF1AB3A1-E4A2-4551-BC76-C57222607250</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>EB619195-479A-447F-A98D-7FC6BD45066F</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
